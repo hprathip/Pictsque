@@ -1,0 +1,66 @@
+<%- include('../partials/header.ejs')%>
+    <div class="container-fluid wrapper mt-3 border-3">
+        <div class="formContent">
+            <div class="row">
+                <div class="col-3">
+                    <img src="<%= trade.image%>" class="img-thumbnail" alt="tradeDetail" width="300" height="700">
+                </div>
+                <div class="col-6">
+                    <h4>
+                        <%= trade.tName%>
+                            <br>
+                            <%= trade.artist%>
+                                <br>
+                                <br>
+                                <i>Added By: </i>
+                                <%=trade.addedBy.firstName+' '+trade.addedBy.lastName%>
+                    </h4>
+                    <br>
+                    <br>
+                    <div>
+                        <% if(user==trade.addedBy._id) { %>
+                            <form>
+                                <button class="btn btn-dark" type="submit" formmethod="get"
+                                    formaction="/trades/<%= trade.id %>/edit">Edit</button>
+                                <button class="btn btn-dark" type="submit" formmethod="POST"
+                                    formaction="/trades/<%= trade.id %>?_method=DELETE">Delete</button>
+                            </form>
+                            <% } %>
+                    </div>
+                </div>
+                <% if (trade.status!="Traded") {%>
+                <%if(trade.addedBy.firstName+" "+trade.addedBy.lastName != firstName+" "+lastName) { %>
+                <div class="col-3">
+                    <h6>Are you interested in this item?</h6>
+                    <form>
+                            <button class="btn btn-sm btn-warning" type="submit" formmethod="get"
+                            formaction="/users/trade/<%=trade.id%>">Trade</button>
+                        <% if (flag==1) {
+                            if(item.isWatch == "Watch") { %>
+                                <button class="btn btn-sm btn-info" formmethod="POST" name="isWatchStatus" value="Unwatch"
+                                formaction="/trades/<%=trade.id%>/watch?_method=DELETE" type="submit">Unwatch</button>
+                            <% } else { %>
+                                <button class="btn btn-sm btn-info" formmethod="POST" name="isWatchStatus" value="Watch"
+                                formaction="/trades/<%=trade.id%>/watch" type="submit">Watch</button>
+                            <% } } else {%>
+                                <button class="btn btn-sm btn-info" formmethod="POST" name="isWatchStatus" value="Watch"
+                                formaction="/trades/<%=trade.id%>/watch" type="submit">Watch</button>
+                            <%}%>
+                    </form>
+                </div>
+                <%} }%>
+            </div>
+
+            <div class="mt-3">
+                <h3>Details</h3>
+                <p class="det">
+                    <!-- Signed Limited Edition Giclee Print (Framed)<br> -->
+                    <%= trade.edition%><br>
+                        <%= trade.dimension%><br>
+                            <%= trade.desc%><br><br>
+                                <%= trade.details%>
+                </p>
+            </div>
+        </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

@@ -1,0 +1,259 @@
+[{
+  "_id": {
+    "$oid": "645abdc2fa7110c73b0e712f"
+  },
+  "category": "Paintings",
+  "tName": "Test1 item1",
+  "artist": "Harry Potter",
+  "edition": "Edition of 105",
+  "dimension": "10cm x 140cm Framed size",
+  "desc": "Valentine's special",
+  "details": "qweu fijoe egheafiuioifau fiau fildliuaf",
+  "image": "https://www.momjunction.com/wp-content/uploads/2020/12/Nature-spray-painting.jpg",
+  "addedBy": {
+    "$oid": "645abd95fa7110c73b0e7127"
+  },
+  "status": "Traded",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645abe15fa7110c73b0e715a"
+  },
+  "category": "Paintings",
+  "tName": "Test2 item1",
+  "artist": "Vincent van Gogh",
+  "edition": "Edition of 15",
+  "dimension": "60cm x 56cm Framed size",
+  "desc": "steel rim",
+  "details": "wdfegjli eelriudfiu ru eiureiyureru \r\n                        ",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Lusitano_Hengst_%28132668445%29.jpeg/1200px-Lusitano_Hengst_%28132668445%29.jpeg",
+  "addedBy": {
+    "$oid": "645abdd6fa7110c73b0e7133"
+  },
+  "status": "Traded",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ac037fa7110c73b0e71d0"
+  },
+  "category": "Crafts",
+  "tName": "Test2 item2",
+  "artist": "Gustav Klimt",
+  "edition": "Edition of 15",
+  "dimension": "60cm x 56cm Framed size",
+  "desc": "wooden handle",
+  "details": "wqeh uole fdkfdfhdkj efef h",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Lusitano_Hengst_%28132668445%29.jpeg/1200px-Lusitano_Hengst_%28132668445%29.jpeg",
+  "addedBy": {
+    "$oid": "645abdd6fa7110c73b0e7133"
+  },
+  "status": "Traded",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ac080fa7110c73b0e71f0"
+  },
+  "category": "Sketches",
+  "tName": "Test1 item2",
+  "artist": "Ian Fennelly",
+  "edition": "Edition of 78",
+  "dimension": "60cm x 56cm Framed size",
+  "desc": "wooden handle",
+  "details": "quhewdj fdjd fhfk g fjhhfe",
+  "image": "https://www.shutterstock.com/image-photo/colourful-pots-handmade-ceramics-folk-260nw-1694364697.jpg",
+  "addedBy": {
+    "$oid": "645abd95fa7110c73b0e7127"
+  },
+  "status": "Traded",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b1925b351b1dc31ea4601"
+  },
+  "category": "Sketches",
+  "tName": "Test2 item3",
+  "artist": "Ian Fennelly",
+  "edition": "Edition of 105",
+  "dimension": "10cm x 140cm Framed size",
+  "desc": "Fiber rectangular plate",
+  "details": "hqwi dhqe jejlf ehf elwrghg",
+  "image": "https://www.momjunction.com/wp-content/uploads/2020/12/Nature-spray-painting.jpg",
+  "addedBy": {
+    "$oid": "645abdd6fa7110c73b0e7133"
+  },
+  "status": "Traded",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b29e4f4481a0d8438f056"
+  },
+  "category": "Paintings",
+  "tName": "Test1 item3",
+  "artist": "Gustav Klimt",
+  "edition": "Edition of 105",
+  "dimension": "60cm x 56cm Framed size",
+  "desc": "Steel Hook",
+  "details": "wdefhiek uhjfv jejfgjh jhf jhllhwl",
+  "image": "https://www.momjunction.com/wp-content/uploads/2020/12/Nature-spray-painting.jpg",
+  "addedBy": {
+    "$oid": "645abd95fa7110c73b0e7127"
+  },
+  "status": "Traded",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba37a50871a953d39e879"
+  },
+  "category": "Crafts",
+  "tName": "Fibre & Textile Crafts",
+  "artist": "Gustav Klimt",
+  "edition": "Edition of 78",
+  "dimension": "160cm x 56cm Framed size",
+  "desc": "Mounted in off-white",
+  "details": "Klimt depicts his subjects as mythical figures made modern by luxuriant surfaces of up-to-the moment graphic motifs.",
+  "image": "http://mymodernmet.com/wp/wp-content/uploads/2017/04/textile-art-12.jpg",
+  "addedBy": {
+    "$oid": "645ba28850871a953d39e871"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba3e850871a953d39e87d"
+  },
+  "category": "Paintings",
+  "tName": "Acrylic Painting",
+  "artist": "Leonardo Da Vinci",
+  "edition": "Edition of 15",
+  "dimension": "40cm x 56cm Framed size",
+  "desc": "Mounted in bluish-white and framed in a pewter moulding",
+  "details": "A number of theories for the former have been proffered over the years. As for that famous smile, its enigmatic quality has driven people crazy for centuries",
+  "image": "https://cdn.shopify.com/s/files/1/0836/2349/articles/impasto-acrylic-painting_fd4bd315-32ad-4fc2-b22f-96f10130deac_1600x.jpg?v=1619113156",
+  "addedBy": {
+    "$oid": "645ba28850871a953d39e871"
+  },
+  "status": "Offer Pending",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba42a50871a953d39e881"
+  },
+  "category": "Paintings",
+  "tName": "Watercolour Painting",
+  "artist": "Johannes Vermeer",
+  "edition": "Edition of 45",
+  "dimension": "60cm x 56cm Framed size",
+  "desc": "Mounted in off-white and framed",
+  "details": "This gets into the debate over whether or not Vermeer employed a pre-photographic device called a camera obscura to create the image.He portrays her looking over her shoulder, locking her eyes with the viewer as if attempting to establish an intimate connection across the centuries.",
+  "image": "https://www.happyfamilyart.com/wp-content/uploads/2021/11/WatercolorSunset-02.jpg",
+  "addedBy": {
+    "$oid": "645ba28850871a953d39e871"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba4b350871a953d39e88f"
+  },
+  "category": "Crafts",
+  "tName": "Furniture & Wood Crafts",
+  "artist": "Sandro Botticelli",
+  "edition": "Edition of 45",
+  "dimension": "60cm x 56cm Framed size",
+  "desc": "Mounted in greenish-blue in a pewter moulding",
+  "details": "Venus is seen being blown ashore on a giant clamshell by the wind gods Zephyrus and Aura as the personification of spring awaits on land with a cloak. Unsurprisingly, Venus attracted the ire of Savonarola, the Dominican monk who led a fundamentalist crackdown on the secular tastes of the Florentines",
+  "image": "https://www.thesprucecrafts.com/thmb/4HTwxDtDBgFVl7ohqgfwvbZvmt4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-157559211-5bf58f10c9e77c0051712b51.jpg",
+  "addedBy": {
+    "$oid": "645ba44650871a953d39e885"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba4f350871a953d39e893"
+  },
+  "category": "Sketches",
+  "tName": "Interior Sketches",
+  "artist": "İnci Eviner",
+  "edition": "Edition of 23",
+  "dimension": "40cm x 56cm Framed size",
+  "desc": "oeuvre, spanning over four decades",
+  "details": "Born in 1956 in Ankara and currently working and residing in Istanbul, Eviner was trained as a painter at the Istanbul Academy of Fine Arts but has always used the medium of drawing as her starting point.",
+  "image": "https://www.contemporaryartissue.com/wp-content/uploads/2022/07/Schermafbeelding-2022-07-14-om-10.50.19.png",
+  "addedBy": {
+    "$oid": "645ba44650871a953d39e885"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba55350871a953d39e897"
+  },
+  "category": "Sketches",
+  "tName": "Potrait Sketches",
+  "artist": "Toyin Ojih Odutola",
+  "edition": "Edition of 45",
+  "dimension": "60cm x 56cm Framed size",
+  "desc": "strong interest in skin topography",
+  "details": "Born in 1985 in Ile-Ife, Nigeria, and currently residing and working in New York, the United States of America. She is best known for her multimedia drawings in which she explores the malleability of identity and visual storytelling.",
+  "image": "https://www.contemporaryartissue.com/wp-content/uploads/2022/07/Schermafbeelding-2022-07-14-om-11.05.32.png",
+  "addedBy": {
+    "$oid": "645ba44650871a953d39e885"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba5ac50871a953d39e89b"
+  },
+  "category": "Sketches",
+  "tName": "Travel Sketches",
+  "artist": "Juan Carlos Figuera",
+  "edition": "Edition of 15",
+  "dimension": "40cm x 56cm Framed size",
+  "desc": "perfectly sketched bridge",
+  "details": "Juan Carlos, Born in 1955 in Johannesburg, South Africa, where the artist continues to work and reside, Carlos is best known for his ink drawings and prints and even animated films resulting from these ink drawings.",
+  "image": "https://d2culxnxbccemt.cloudfront.net/craft/content/uploads/2020/10/06155625/ink-and-watercolor-travel-sketch-of-bridge.png",
+  "addedBy": {
+    "$oid": "645ba44650871a953d39e885"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba5e850871a953d39e89f"
+  },
+  "category": "Paintings",
+  "tName": "Spray Painting",
+  "artist": "Ian Fennelly",
+  "edition": "Edition of 45",
+  "dimension": "60cm x 56cm Framed size",
+  "desc": "Mounted in white and framed in a pewter moulding",
+  "details": "Ian Fennelly is a British artist and more specifically an urban sketcher; or to be even more precise - Ian makes art in a busy location while looking at buildings and street furniture.",
+  "image": "https://www.momjunction.com/wp-content/uploads/2020/12/Nature-spray-painting.jpg",
+  "addedBy": {
+    "$oid": "645ba44650871a953d39e885"
+  },
+  "status": "Offer Pending",
+  "__v": 0,
+  "tradeWith": {
+    "$oid": "645ba3e850871a953d39e87d"
+  }
+},{
+  "_id": {
+    "$oid": "645ba63f50871a953d39e8ab"
+  },
+  "category": "Crafts",
+  "tName": "Ceramic & Glass Crafts",
+  "artist": "Vincent van Gogh",
+  "edition": "Edition of 105",
+  "dimension": "10cm x 140cm Framed size",
+  "desc": "Mounted in off-white and framed in a heart moulding",
+  "details": "The Starry Night seems to reflect his turbulent state of mind at the time, as the night sky comes alive with swirls and orbs of frenetically applied brush marks springing from the yin and yang of his personal demons and awe of nature.",
+  "image": "https://www.shutterstock.com/image-photo/colourful-pots-handmade-ceramics-folk-260nw-1694364697.jpg",
+  "addedBy": {
+    "$oid": "645ba28850871a953d39e871"
+  },
+  "status": "Available",
+  "__v": 0
+}]

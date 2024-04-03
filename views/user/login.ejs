@@ -1,0 +1,23 @@
+<%- include('../partials/header.ejs')%>
+<div class="container newTrade_wrapper mt-1 border-1">
+    <div class="formContent row">
+        <form action="/users/login" method="POST">
+            <div class="row mb-3">
+                <label for="category" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="name" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-dark" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+<%- include('../partials/footer.ejs')%>

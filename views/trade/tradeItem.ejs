@@ -1,0 +1,47 @@
+<%- include('../partials/header.ejs')%>
+    <div class="container-fluid wrapper">
+        <!-- <h2>Welcome, <%=user.firstName%>
+        </h2> -->
+        <div class="mainContent mb-70">
+            <% if(trades.length){%>
+                <h3>Your Trades</h3>
+                <form action="/trades/trade/<%= interest%>?_method=PUT" method="POST">
+                    <table class="table table-hover table-bordered border-light">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <% trades.forEach(trade=> { %>
+                                <tr class="eachCat">
+                                    <td>
+                                        <input type="radio" id="<%= trade._id %>" name="trade" value="<%= trade._id%>">
+                                    </td>
+                                    <td>
+                                        <%= trade.tName %>
+                                    </td>
+                                    <!-- </th> -->
+                                    <td>
+                                        <%= trade.category %>
+                                    </td>
+                                    <td>
+                                        <%= trade.status %>
+                                    </td>
+
+                                </tr>
+                                <% }); %>
+                        </tbody>
+                    </table>
+                    <br>
+                    <button class="btn btn-dark" type="submit">Trade</button>
+                </form>
+                <%} else {%>
+                    <p>You do not have any items available for Trading</p>
+                    <% }%>
+        </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

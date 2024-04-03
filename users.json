@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "645abd95fa7110c73b0e7127"
+  },
+  "firstName": "Test1",
+  "lastName": "test",
+  "email": "test1@g.com",
+  "password": "$2b$10$GpgFqQKcoAaiRTMy6lsMZekwkjLIQ//bsE37Dv8Mt8LpcNXLFZhjS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645abdd6fa7110c73b0e7133"
+  },
+  "firstName": "Test2",
+  "lastName": "test",
+  "email": "test2@g.com",
+  "password": "$2b$10$qexfO3XIs3opvQ7qyH0bPODRTwULdoIxzpHBJ69bheiXy4TtbqBSS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba28850871a953d39e871"
+  },
+  "firstName": "Harika Priya",
+  "lastName": "Prathipati",
+  "email": "hpp@gmail.com",
+  "password": "$2b$10$chFjWOGNamIUfF9fUm2Cm.Cz48hVhZq3NNlIjQmzrqE.r/1XgtZ8a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645ba44650871a953d39e885"
+  },
+  "firstName": "Dhanush",
+  "lastName": "G",
+  "email": "gdss@gmail.com",
+  "password": "$2b$10$FUMFiUm4obmVFk/ahRFgi.EWgA6IirxnWL9MX/9olgg8VqZ8upRbK",
+  "__v": 0
+}]

@@ -1,0 +1,145 @@
+<%- include('../partials/header.ejs')%>
+    <div class="container-fluid wrapper">
+        <!-- <h2>Welcome, <%=user.firstName%>
+        </h2> -->
+        <div class="mainContent mb-70">
+            <% if(trades.length){%>
+                <h3>Your Trades</h3>
+                <table class="table table-hover table-bordered border-light">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <% trades.forEach(trade=> { if(trade!=null){ %>
+                            <tr class="eachCat">
+                                <!-- <th scope="row"> -->
+                                <td>
+                                    <a href="/trades/<%= trade.id %>">
+                                        <%= trade.tName %>
+                                    </a>
+                                </td>
+                                <!-- </th> -->
+                                <td>
+                                    <%= trade.category %>
+                                </td>
+                                <td>
+                                    <%= trade.status %>
+                                </td>
+                                <td>
+                                    <form style="float: left;">
+                                        <button class="btn btn-dark btn-sm" type="submit" formmethod="GET"
+                                            formaction="/trades/<%= trade._id %>/edit">Edit</button>
+                                        <button class="btn btn-dark btn-sm" type="submit" formmethod="POST"
+                                            formaction="/trades/<%= trade._id %>?_method=DELETE">Delete</button>
+
+                                        <% if(trade.status=='Offer Pending' && trade.tradeWith) { %>
+                                            <button class="btn btn-dark btn-sm" type="submit" formmethod="GET"
+                                                formaction="/users/trade/ownoffer/<%=trade._id%>">Manage Offer</button>
+                                            <% } else if (trade.status=='Offer Pending' ) {%>
+                                                <button class="btn btn-dark btn-sm" type="submit" formmethod="GET"
+                                                    formaction="/users/trade/offer/<%=trade._id%>">Manage Offer</button>
+                                                <%}%>
+                                </td>
+                            </tr>
+                            <% }}); %>
+                    </tbody>
+                </table>
+                <%} else {%>
+                    <p>You have not added any trade items</p>
+                    <% }%>
+        </div>
+
+        <div class="mainContent mb-70">
+            <% if(items.length){%>
+                <h3>Your WatchList</h3>
+                <table class="table table-hover table-bordered border-light">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Status</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <% items.forEach(item=> { if(item.trade!=null){%>
+                            <tr class="eachCat">
+                                <!-- <th scope="row"> -->
+                                <td>
+                                    <a href="/trades/<%= item.trade.id %>">
+                                        <%= item.trade.tName %>
+                                    </a>
+                                </td>
+                                <!-- </th> -->
+                                <td>
+                                    <%= item.trade.category %>
+                                </td>
+                                <td>
+                                    <%= item.trade.status %>
+                                </td>
+                                <td>
+                                    <form style="float: left;">
+                                        <button class="btn btn-sm btn-info" formmethod="POST" name="isWatchStatus"
+                                            value="Unwatch" formaction="/trades/<%=item.trade._id%>/watch?_method=DELETE"
+                                            type="submit">Unwatch</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <% }}); %>
+                    </tbody>
+                </table>
+                <%} else {%>
+                    <p>You are not watching any trade items</p>
+                    <% }%>
+        </div>
+
+        <div class="mainContent mb-70">
+            <% if(offers.length){%>
+                <h3>Your Offers</h3>
+                <table class="table table-hover table-bordered border-light">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Status</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <% offers.forEach(offer=> { %>
+                            <tr class="eachCat">
+                                <!-- <th scope="row"> -->
+                                <td>
+                                    <a href="/trades/<%= offer._id %>">
+                                        <%= offer.tName %>
+                                    </a>
+                                </td>
+                                <!-- </th> -->
+                                <td>
+                                    <%= offer.category %>
+                                </td>
+                                <td>
+                                    <%= offer.status %>
+                                </td>
+                                <td>
+                                    <form style="float: left;">
+                                        <button class="btn btn-sm btn-danger" type="submit" formmethod="POST"
+                                            formaction="/users/trade/offer/cancel/<%= offer.tradeWith %>&<%= offer._id %>?_method=PUT">Cancel
+                                            Offer</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <% }); %>
+                    </tbody>
+                </table>
+                <%} else {%>
+                    <p>You are not having any trade offers</p>
+                    <% }%>
+        </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

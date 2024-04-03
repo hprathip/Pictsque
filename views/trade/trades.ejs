@@ -1,0 +1,36 @@
+<%- include('../partials/header.ejs')%>
+    <div class="container-fluid wrapper">
+        <div class="mainContent mb-70">
+            <%if(categories.length) {%>
+                <%categories.forEach(categ=> { %>
+                    <div class="eachCat">
+                        <div class="catHead row mt-1">
+                            <h3>
+                                <%= categ%>
+                            </h3>
+                            <ol>
+                                <% if(trades.length){ %>
+                                    <% trades.forEach(trade=>{
+                                        if(trade.category === categ) {%>
+                                        <li>
+                                            <a href="/trades/<%= trade.id %>">
+                                                <%= trade.tName %>
+                                            </a>
+                                        </li>
+
+                                        <%} }); } else {%>
+                                            <p>There are no trades to display.</p>
+                                            <% }%>
+                            </ol>
+
+                        </div>
+                    </div>
+
+                    <%}); %>
+                <%} else {%>
+                        <p>There are no categories</p>
+                        <%}%>
+        </div>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

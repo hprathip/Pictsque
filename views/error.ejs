@@ -1,0 +1,12 @@
+<%- include('./partials/header.ejs')%>
+    <div class="container-fluid wrapper">
+        <div class="mainContent mb-70">
+            <h3>
+                <%= error.status %> Error
+            </h3>
+            <p>
+                <%= error.message %>
+            </p>
+        </div>
+    </div>
+    <%- include('./partials/footer.ejs')%>

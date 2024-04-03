@@ -1,0 +1,35 @@
+<%- include('../partials/header.ejs')%>
+    <div class="container-fluid wrapper">
+        <div class="mainContent mb-70">
+            <h3>Manage the Deal</h3>
+            <table class="table table-bordered border-light">
+
+                <tr class="eachCat">
+                    <td>
+                        <%= offer.tradeInItem.tName %>
+                            <br><br>
+                            <img src="<%= offer.tradeInItem.image%>" class="img-thumbnail" alt="tradeDetail" width="300"
+                                height="700">
+                    </td>
+                    <td>
+                        <%= offer.interestedItem.tName %>
+                            <br><br>
+                            <img src="<%= offer.interestedItem.image%>" class="img-thumbnail" alt="tradeDetail"
+                                width="300" height="700">
+                    </td>
+                    <td>
+                        <form style="float: left;">
+                            <button class="btn btn-sm btn-success" type="submit" formmethod="POST"
+                                formaction="/users/trade/offer/<%= offer.id %>/accept?_method=DELETE">Accept</button>
+                            <button class="btn btn-sm btn-danger" type="submit" formmethod="POST"
+                                formaction="/users/trade/offer/<%= offer.id %>?_method=DELETE">Reject</button>
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

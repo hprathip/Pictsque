@@ -1,0 +1,61 @@
+<%- include('../partials/header.ejs')%>
+    <div class="container newTrade_wrapper mt-1 border-1">
+        <div class="row formContent">
+            <form method="POST" action="/trades/<%=trade.id%>?_method=PUT">
+                <div class="row mb-3">
+                    <label for="category" class="col-sm-2 col-form-label">Category</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="category" name="category" required value="<%= trade.category %>">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" name="name" required value="<%= trade.tName %>">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="artist" class="col-sm-2 col-form-label">Artist</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="artist" name="artist" required value="<%= trade.artist %>">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="edition" class="col-sm-2 col-form-label">Edition</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="edition" name="edition" required value="<%= trade.edition %>">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="dimension" class="col-sm-2 col-form-label">Dimension</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="dimension" name="dimension" required value="<%= trade.dimension %>">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="desc" class="col-sm-2 col-form-label">Short Description</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="desc" name="desc" required value="<%= trade.desc %>">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="details" class="col-sm-2 col-form-label">Details</label>
+                    <div class="col-sm-10">
+                        <textarea type="text" class="form-control" id="details" name="details" required minlength="10"><%= trade.details %>
+                        </textarea>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="image" class="col-sm-2 col-form-label">Image</label>
+                    <div class="col-sm-10">
+                        <input type="url" class="form-control" id="image" name="image" required value="<%= trade.image %>">
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-dark" type="submit">Update Trade</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

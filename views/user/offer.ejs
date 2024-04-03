@@ -1,0 +1,62 @@
+<%- include('../partials/header.ejs')%>
+    <div class="container-fluid wrapper">
+        <!-- <h2>Welcome, <%=user.firstName%>
+        </h2> -->
+        <div class="mainContent mb-70">
+            <% if(Town.tradeWith) {%>
+                <table class="table table-bordered border-light">
+
+                    <tr class="eachCat">
+                        <td>
+                            <%= Town.tName %>
+                                <br><br>
+                                <img src="<%= Town.image%>" class="img-thumbnail" alt="tradeDetail" width="300"
+                                    height="700">
+                        </td>
+                        <td>
+                            <%= otherT.tName %>
+                                <br><br>
+                                <img src="<%= otherT.image%>" class="img-thumbnail" alt="tradeDetail" width="300"
+                                    height="700">
+                        </td>
+                        <td>
+                            <form style="float: left;">
+                                <button class="btn btn-sm btn-success" type="submit" formmethod="POST"
+                                    formaction="/users/trade/offer/accept/<%= otherT._id %>&<%= Town._id %>?_method=PUT">Accept</button>
+                                <button class="btn btn-sm btn-danger" type="submit" formmethod="POST"
+                                    formaction="/users/trade/offer/cancel/<%= otherT._id %>&<%= Town._id %>?_method=PUT">Reject</button>
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <%} else {%>
+                    <table class="table table-bordered border-light">
+
+                        <tr class="eachCat">
+                            <td>
+                                <%= Town.tName %>
+                                    <br><br>
+                                    <img src="<%= Town.image%>" class="img-thumbnail" alt="tradeDetail" width="300"
+                                        height="700">
+                            </td>
+                            <td>
+                                <%= otherT.tName %>
+                                    <br><br>
+                                    <img src="<%= otherT.image%>" class="img-thumbnail" alt="tradeDetail" width="300"
+                                        height="700">
+                            </td>
+                            <td>
+                                <form style="float: left;">
+                                    <button class="btn btn-sm btn-danger" type="submit" formmethod="POST"
+                                        formaction="/users/trade/offer/cancel/<%= otherT._id %>&<%= Town._id %>?_method=PUT">Cancel
+                                        Offer</button>
+                                </form>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <% } %>
+        </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>
