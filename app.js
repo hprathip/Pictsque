@@ -21,7 +21,8 @@ let host = 'localhost';
 app.set('view engine', 'ejs');
 
 // connect to database
-mongoose.connect('mongodb://127.0.0.1:27017/tradedb', { useNewUrlParser: true, useUnifiedTopology: true })
+// this line is commented to prevent issues security
+// mongoose.connect('mongodb://127.0.0.1:27017/tradedb', { useNewUrlParser: true, useUnifiedTopology: true })
 // mongoose.connect('mongodb://localhost:27017/tradedb', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         //start the server
@@ -36,7 +37,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie: {maxAge:60*60*1000},
-    store: new MongoStore({mongoUrl: 'mongodb://127.0.0.1:27017/tradedb'})
+    // store: new MongoStore({mongoUrl: 'mongodb://127.0.0.1:27017/tradedb'})
 }));
 
 app.use(flash());
